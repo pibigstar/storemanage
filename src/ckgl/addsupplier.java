@@ -47,7 +47,7 @@ public class addsupplier extends JFrame {
 	public addsupplier() {
 		setTitle("添加供货商");
 		JPanel imagePanel;
-		ImageIcon backImageIcon=new ImageIcon("背景3.jpg");
+		ImageIcon backImageIcon=new ImageIcon("resource/背景3.jpg");
 		JLabel imageLabel=new JLabel(backImageIcon);
 		imageLabel.setBounds(0,0,backImageIcon.getIconWidth(),backImageIcon.getIconHeight());
 		imagePanel=(JPanel)this.getContentPane();
@@ -119,7 +119,7 @@ public class addsupplier extends JFrame {
 					Class.forName("com.mysql.jdbc.Driver");
 					String url="jdbc:mysql://localhost:3306/cangkuguanli";
 					String userString="root";
-					String passwString="leikewei000";
+					String passwString="123456";
 					connection=DriverManager.getConnection(url,userString,passwString);
 					statement=connection.createStatement();
 					String sql="insert into supplierinfo(name,tradename,tradeprice,contact,address)values('"+textField.getText()+"','"+textField_1.getText()+"','"+

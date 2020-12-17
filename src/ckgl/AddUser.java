@@ -44,7 +44,7 @@ public class AddUser extends JFrame {
 	public AddUser() {
 		setTitle("ÃÌº””√ªß");
 		JPanel imagePanel;
-		ImageIcon backImageIcon=new ImageIcon("±≥æ∞2.jpg");
+		ImageIcon backImageIcon=new ImageIcon("resource/±≥æ∞2.jpg");
 		JLabel imageLabel=new JLabel(backImageIcon);
 		imageLabel.setBounds(0,0,backImageIcon.getIconWidth(),backImageIcon.getIconHeight());
 		imagePanel=(JPanel)this.getContentPane();
@@ -104,7 +104,7 @@ public class AddUser extends JFrame {
 						Class.forName("com.mysql.jdbc.Driver");
 						String url="jdbc:mysql://localhost:3306/cangkuguanli";
 						String userString="root";
-						String passwordString="leikewei000";
+						String passwordString="123456";
 						connection=DriverManager.getConnection(url,userString,passwordString);
 						statement=connection.createStatement();
 						String sqlString="insert into mima(user,password)values('"+textField.getText()+"','"+textField_1.getText()+"')";

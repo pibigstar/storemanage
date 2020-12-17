@@ -50,7 +50,7 @@ public class SupplierInfo extends AbstractTableModel{
 				Class.forName("com.mysql.jdbc.Driver");
 				String url="jdbc:mysql://localhost:3306/cangkuguanli";
 				String user="root";
-				String password="leikewei000";
+				String password="123456";
 				connection=DriverManager.getConnection(url, user, password);
 				statement=connection.createStatement();
 				preparedStatement=connection.prepareStatement(sql);

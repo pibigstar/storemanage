@@ -112,7 +112,7 @@ public class AddCargob extends JFrame {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url="jdbc:mysql://localhost:3306/cangkuguanli";
 			String userString="root";
-			String passwString="leikewei000";
+			String passwString="123456";
 			connection=DriverManager.getConnection(url,userString,passwString);
 			statement=connection.createStatement();
 			String sqlString="select * from supplier";

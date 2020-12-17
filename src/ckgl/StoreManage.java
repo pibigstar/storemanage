@@ -76,7 +76,7 @@ public class StoreManage extends JFrame implements ActionListener{
 				JOptionPane.showMessageDialog(null , "作者QQ：741047261");
 				Desktop desktop=Desktop.getDesktop();
 				try {
-					desktop.browse(new URI("http://leikewei521.tk"));
+					desktop.browse(new URI("https://github.com/pibigstar"));
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				} catch (URISyntaxException e1) {
@@ -161,7 +161,7 @@ public class StoreManage extends JFrame implements ActionListener{
 		 */
 
 
-		JLabel hyLabel=new JLabel(new ImageIcon("hy2.jpg"));//欢迎图片
+		JLabel hyLabel=new JLabel(new ImageIcon("resource/hy2.jpg"));//欢迎图片
 		JTabbedPane xxk=new JTabbedPane();
 		JButton exitButton=new JButton("退出");
 		exitButton.addActionListener(new ActionListener(){
@@ -512,7 +512,7 @@ public class StoreManage extends JFrame implements ActionListener{
 		 * 功能设置
 		 */
 		JPanel functionPanel=new JPanel();
-		ImageIcon background=new ImageIcon("路飞小.jpg");
+		ImageIcon background=new ImageIcon("resource/路飞小.jpg");
 		JLabel image=new JLabel(background);
 		JCheckBox remindBox=new JCheckBox("进货提醒          ");
 		final JCheckBox noChange=new JCheckBox("锁定数据          ");
@@ -564,7 +564,7 @@ public class StoreManage extends JFrame implements ActionListener{
 				java.sql.Statement statement=null;
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
-					connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/cangkuguanli","root","leikewei000");
+					connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/cangkuguanli","root","123456");
 					statement=connection.createStatement();
 					String sql="select * from productinfo where inver<'100'";
 					ResultSet resultSet=statement.executeQuery(sql);
@@ -671,7 +671,7 @@ public class StoreManage extends JFrame implements ActionListener{
 		this.setSize(465, 750);
 		this.setLocation(530, 80);
 		this.setResizable(false);
-		this.setIconImage(new ImageIcon("保存.png").getImage());
+		this.setIconImage(new ImageIcon("resource/保存.png").getImage());
 
 	}
 
@@ -766,7 +766,7 @@ public class StoreManage extends JFrame implements ActionListener{
 			Class.forName("com.mysql.jdbc.Driver");
 			String url="jdbc:mysql://loaclhost:3306/cangkuguanli";
 			String userString="root";
-			String passwordString="leikewei000";
+			String passwordString="123456";
 			connection=DriverManager.getConnection(url,userString,passwordString);
 			statement=connection.createStatement();
 		} catch (Exception e) {
@@ -790,7 +790,7 @@ public class StoreManage extends JFrame implements ActionListener{
 			Class.forName("com.mysql.jdbc.Driver");
 			String url="jdbc:mysql://localhost:3306/cangkuguanli";
 			String userString="root";
-			String passwString="leikewei000";
+			String passwString="123456";
 			connection=DriverManager.getConnection(url,userString,passwString);
 			statement=connection.createStatement();
 			//动态删除选中项
@@ -821,7 +821,7 @@ public class StoreManage extends JFrame implements ActionListener{
 			Class.forName("com.mysql.jdbc.Driver");
 			String url="jdbc:mysql://localhost:3306/cangkuguanli";
 			String userString="root";
-			String passwordString="leikewei000";
+			String passwordString="123456";
 			connection=DriverManager.getConnection(url, userString, passwordString);
 			statement=connection.createStatement();
 			preparedStatement=connection.prepareStatement("delete from supplierinfo where name=?");
@@ -885,7 +885,7 @@ public class StoreManage extends JFrame implements ActionListener{
 			Class.forName("com.mysql.jdbc.Driver");
 			String url="jdbc:mysql://localhost:3306/cangkuguanli";
 			String userString="root";
-			String passwordString="leikewei000";
+			String passwordString="123456";
 			connection=DriverManager.getConnection(url, userString, passwordString);
 			statement=connection.createStatement();
 			String sql="select * from productinfo";

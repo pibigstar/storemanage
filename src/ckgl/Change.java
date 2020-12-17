@@ -47,7 +47,7 @@ public class Change extends JFrame {
 	public Change() {
 		setTitle("ÃÜÂëÐÞ¸Ä");
 		JPanel imagePanel;
-		ImageIcon backImageIcon=new ImageIcon("±³¾°2.jpg");
+		ImageIcon backImageIcon=new ImageIcon("resource/±³¾°2.jpg");
 		JLabel imageLabel=new JLabel(backImageIcon);
 		imageLabel.setBounds(0,0,backImageIcon.getIconWidth(),backImageIcon.getIconHeight());
 		imagePanel=(JPanel)this.getContentPane();
@@ -110,7 +110,7 @@ public class Change extends JFrame {
 						Class.forName("com.mysql.jdbc.Driver");
 						String url="jdbc:mysql://localhost:3306/cangkuguanli";
 						String userString="root";
-						String passwString="leikewei000";
+						String passwString="123456";
 						connection=DriverManager.getConnection(url,userString,passwString);
 						statement=connection.createStatement();
 						String sql="select * from mima where user='"+textField.getText()+"' and password='"+textField_1.getText()+"'";

@@ -7,7 +7,7 @@ import java.sql.*;
 import javax.swing.*;
 public class Longing extends JFrame implements ActionListener{
 	public Longing(){
-		JLabel tpLabel=new JLabel(new ImageIcon("logo.gif"));
+		JLabel tpLabel=new JLabel(new ImageIcon("resource/logo.gif"));
 		JLabel userlLabel =new JLabel("ÓÃ»§Ãû:");
 		final JTextField userTextField =new JTextField(15);
 		JLabel passwLabel =new JLabel(" ÃÜ   Âë:");
@@ -63,7 +63,7 @@ public class Longing extends JFrame implements ActionListener{
 			Class.forName("com.mysql.jdbc.Driver");
 			String url="jdbc:mysql://localhost:3306/cangkuguanli";
 			String userString="root";
-			String passwString="leikewei000";
+			String passwString="123456";
 			connection=DriverManager.getConnection(url,userString,passwString);
 			statement=connection.createStatement();
 			String sql="select * from mima where user='"+user+"' and password='"+password+"'";
